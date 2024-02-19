@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: rgb(41, 40, 40); 
+                color: whitesmoke;
+                font-size: 1.2rem;
+                padding-bottom: 200px;
+            }
+            button {
+                
+                width: fit-content;
+                padding: 5px 10px;
+                margin: 10px 30px 70px 30px;
+                background-color: orangered;
+                color: whitesmoke;
+                font-size: 16px;
+            }
+            div {
+                background-color: rgb(78, 78, 78);
+                margin-bottom: 20px;
+                border-radius: 5%;
+                border-bottom-style: groove;
+                border-bottom-width: 2px;
+                padding: 20px;
+                
+            }
+            xmp {
+                overflow-x: scroll;
+                overflow-y: scroll;
+                scroll-behavior: smooth;
+                max-height: 70vh;
+            }
+            summary {
+                font-size: 1.7rem;
+            }
+            
+                
+            
+            p {
+                color: rgb(221, 44, 44);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CODES</h1>
+        <a href="bulb.html"><button>&lt;Back</button></a>
+        <p>Don't copy without permission</p>
+        <div>
+            <summary>HTML</summary>
+            <details>
+                <xmp>
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Bulb</title>            
+            </head>
+            <body>
+
+                
+                    <summary><h4>&#9989; My First Demo Project</h4></summary>
+                    
+                        <P>Done with javaScipt</P>
+                        <p id="d">Thy word is a lamp unto my feet, and a <mark>light</mark> unto my path.(psalm 119:77)</p>
+                        <div id="bulb">
+                            <img src="bulbOff.png" alt="Check internet connection"></div>
+                        <div>
+                            <strong>SWITCH</strong>
+                            <button id="on" onclick="change('on')">On</button>
+                            <button id="off" onclick="change('off')">Off</button>
+                        </div>
+                        <a href="bulb.html"><span>Get Codes</span></a> 
+            </body>  
+        </html>
+                </xmp>
+            </details>
+        </div>
+
+        <div>
+            <summary>CSS Styles</summary>
+            <details>
+    <xmp>
+        body {
+            background-color: rgb(41, 40, 40); 
+            color: whitesmoke;
+            font-size: 1.5rem;
+        }
+        img {
+            height: 40vh;
+            width: 80vw;
+        }
+        #bulb {
+            margin: 20px 10px;
+            display: flex;
+            justify-content: center;
+        }
+        :link {
+            color: blue;
+            
+        }
+        :link:active {
+            color: green;
+        }
+        button {
+            height: 26px;
+            width: 52px;
+            margin: 10px 30px 70px 30px;
+        }
+        strong {
+            display: block;
+        }
+        #on {
+            background-color: rgb(84, 253, 6);
+        }
+        #off {
+            background-color: orangered;
+        }
+        #d {
+            font-size: 1.1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </xmp>
+            </details>
+        </div>
+
+        <div>
+            <summary>javaScipt</summary>
+            <details>
+                <xmp>
+        <script>
+            function change(status) {
+                let clear = document.getElementById('bulb').innerHTML= ''
+                let element = document.createElement('img')
+                
+                if (status === 'on') {
+                    element.src = 'bulbOn.png'
+                }else {
+                    element.src = 'bulbOff.png'
+                }
+                const container = document.getElementById('bulb')
+                bulb.appendChild(element)
+            }
+        </script>
+                </xmp>
+            </details>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Bulb Switching
+        </title>
+        <style>
+            body {
+                background-color: rgb(41, 40, 40); 
+                color: whitesmoke;
+                font-size: 1.5rem;
+                padding-bottom: 100px;
+            }
+            img {
+                height: 40vh;
+                max-height: 300px;
+                width: 95vw;
+                max-width: 500px;
+            }
+            #bulb {
+                margin: 20px 10px;
+                display: flex;
+                justify-content: center;
+            }
+            :link {
+                color: blue;
+                
+            }
+            :link:active {
+                color: green;
+            }
+            button {
+                height: 26px;
+                width: 52px;
+                margin: 10px 30px 70px 30px;
+            }
+            strong {
+                display: block;
+            }
+            #on {
+                background-color: rgb(84, 253, 6);
+            }
+            #off {
+                background-color: orangered;
+            }
+            #d {
+                font-size: 1rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            a img {
+                height: 50px;
+                width: 50px;
+                margin: 0 10px;
+            }
+            div a {text-decoration: none;}
+            footer div {
+                margin: 20px auto;
+                display: flex;
+                justify-content: center;
+
+            }
+        </style>
+    </head>
+    <body>
+
+        
+            <summary><h2>&#9989; MY DEMO PROJECT</h2></summary>
+             
+                <P>Done with javaScipt</P>
+                <p id="d">Thy word is a lamp unto my feet, and a <mark>light</mark> unto my path.(psalm 119:77)</p>
+                <div id="bulb"><img src="bulbOff.png" alt="Check internet connection"></div>
+                <div>
+                <strong>SWITCH</strong>
+                <button id="on" onclick="change('on')">On</button>
+                <button id="off" onclick="change('off')">Off</button>
+                
+                
+                </div>
+                <a href="codes.html"><span>Get Codes</span></a>
+                <footer>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=61556386682742" target="_blank">
+                            <img src="BW.fbl.png" title="Facebook">
+                        </a>
+                        <a href="https://call.whatsapp.com/voice/B88KG2eD2BhoQlRMauqeMT" target="_blank">
+                            <img src="BW.wal.png" title="WhatsApp">
+                        </a>
+                        <a href="https://www.instagram.com/akosman01?igsh=YzljYTk1ODg3Zg==" target="_blank">
+                            <img src="BW.igl.png" title="Instagram">
+                        </a>
+                        
+                    </div>
+                </footer>
+                <script>
+                    function change(status) {
+                        let clear = document.getElementById('bulb').innerHTML= ''
+                        let element = document.createElement('img')
+                        
+                        if (status === 'on') {
+                            element.src = 'bulbOn.png'
+                        }else {
+                            element.src = 'bulbOff.png'
+                        }
+                        const container = document.getElementById('bulb')
+                        bulb.appendChild(element)
+                    }
+                </script>
+               
+      
+    </body>  
+</html>
